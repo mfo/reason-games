@@ -1,0 +1,28 @@
+{
+  "name": "testmfo",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "./lib/bs/bytecode/indexhot.byte",
+    "start:byte": "./lib/bs/bytecode/indexhot.byte",
+    "start:native": "./lib/bs/native/index.native",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "build:web": "bsb -make-world -backend js",
+    "build:native": "bsb -make-world -backend native",
+    "build:nativew": "bsb -w -make-world -backend native",
+    "build:byte": "bsb -make-world -backend bytecode",
+    "build:bytew": "bsb -w -make-world -backend bytecode",
+    "clean": "bsb -clean-world"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "reprocessing": "schmavery/reprocessing"
+  },
+  "devDependencies": {
+    "bs-platform": "bsansouci/bsb-native"
+  }
+}
